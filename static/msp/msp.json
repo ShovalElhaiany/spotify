@@ -1,0 +1,76 @@
+
+{
+    "artist": {
+        "id": "MSP",
+        "name": "MSP",
+        "monthlyListeners": 1500000,
+        "headerUrl": "../../static/msp/images/MPS.jpg",
+        "cover": "../../static/msp/images/MSP_cover.jpg"
+    },
+    "topTracks": [
+        {
+            "id": "MSP_2015",
+            "name": "The most talented duo",
+            "durationText": "4:03",
+            "playCount": 500000,
+            "track_image": "../../static/msp/images/The most talented duo.jpg",
+            "audio_url": "../../static/msp/audios/The most talented duo.mp3"
+        },
+        {
+            "id": "MSP_2016",
+            "name": "The home",
+            "durationText": "6:12",
+            "playCount": 700000,
+            "track_image": "../../static/msp/images/The home.jpg",
+            "audio_url": "../../static/msp/audios/The home.mp3"
+        },
+        {
+            "id": "MSP_2017",
+            "name": "The guys",
+            "durationText": "3:48",
+            "playCount": 1000000,
+            "track_image": "../../static/msp/images/The guys.jpg",
+            "audio_url": "../../static/msp/audios/The guys.mp3"
+        },
+        {
+            "id": "MSP_2018",
+            "name": "The split",
+            "durationText": "3:44",
+            "playCount": 999999999,
+            "track_image": "../../static/msp/images/The split.jpg",
+            "audio_url": "../../static/msp/audios/The split.mp3"
+        },
+        {
+            "id": "MSP_2019",
+            "name": "Shirgao",
+            "durationText": "5:13",
+            "playCount": 1000000,
+            "track_image": "../../static/msp/images/Shirgao.jpg",
+            "audio_url": "../../static/msp/audios/Shirgao.mp3"
+        },
+        {
+            "id": "MSP_2020",
+            "name": "Corona",
+            "durationText": "1:54",
+            "playCount": 900000,
+            "track_image": "../../static/msp/images/Corona.jpg",
+            "audio_url": "../../static/msp/audios/Corona.mp3"
+        },
+        {
+            "id": "MSP_2021",
+            "name": "Welcome to the party",
+            "durationText": "4:03",
+            "playCount": 200000,
+            "track_image": "../../static/msp/images/Welcome to the party.jpg",
+            "audio_url": "../../static/msp/audios/Welcome to the party.mp3"
+        },
+        {
+            "id": "MSP_2022",
+            "name": "Danny harta",
+            "durationText": "3:34",
+            "playCount": 800000,
+            "track_image": "../../static/msp/images/Danny harta.jpg",
+            "audio_url": "../../static/msp/audios/Danny harta.mp3"
+        }
+    ]
+}

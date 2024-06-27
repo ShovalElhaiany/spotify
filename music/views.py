@@ -13,7 +13,7 @@ import json
 from django.conf import settings
 
 def load_MSP_data():
-    file_path = os.path.join(settings.BASE_DIR, 'static/msp.json') 
+    file_path = os.path.join(settings.BASE_DIR, 'static/msp/msp.json') 
     with open(file_path, 'r') as file:
         data = json.load(file)
     return data
@@ -174,6 +174,19 @@ def music(request, pk):
             'duration_text': duration_text,
             'track_image': track_image,
         }
+    # Add MSP
+    elif track_id.startswith("MSP"):
+        MSP_data = load_MSP_data()
+        MSP_tracks = MSP_data['topTracks']
+        MSP_track = next((track for track in MSP_tracks if track['id'] == track_id), None)
+        if MSP_track:
+            context = {
+                'track_name': MSP_track['name'],
+                'artist_name': 'MSP',
+                'audio_url': MSP_track['audio_url'],
+                'duration_text': MSP_track['durationText'],
+                'track_image': MSP_track['track_image'],
+            }
     return render(request, 'music.html', context)
 
 
@@ -292,6 +305,16 @@ def profile(request, pk):
             "monthlyListeners": monthly_listeners,
             "headerUrl": header_url,
             "topTracks": top_tracks,
+        }
+    # Add MSP
+    elif artist_id == "MSP":
+        MSP_data = load_MSP_data()
+        MSP = MSP_data['artist']
+        artist_data = {
+            "name": MSP['name'],
+            "monthlyListeners": MSP['monthlyListeners'],
+            "headerUrl": MSP['cover'],
+            "topTracks": MSP_data['topTracks'],
         }
     else:
         artist_data = {}
